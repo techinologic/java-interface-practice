@@ -21,4 +21,11 @@ public class Vehicle implements Drivable {
     public int getSpeed() {
         return this.speed;
     }
+
+    // constructor
+
+    public Vehicle(int wheels, int speed) {
+        this.numWheels = wheels;
+        this.speed = speed;
+    }
 }
