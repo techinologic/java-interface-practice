@@ -1,10 +1,11 @@
 /**
  * Created by Paopao on 08/09/17.
  */
-public class Vehicle implements Drivable {
+public class Vehicle extends Crashable implements Drivable {
 
     int numWheels = 2;
     int speed = 0;
+    private int carStrength = 0;
 
     public int getWheels() {
         return this.numWheels;
@@ -27,5 +28,13 @@ public class Vehicle implements Drivable {
     public Vehicle(int wheels, int speed) {
         this.numWheels = wheels;
         this.speed = speed;
+    }
+
+    public void setCarStrength(int carStrength) {
+        this.carStrength = carStrength;
+    }
+
+    public int getCarStrength() {
+        return this.carStrength = carStrength;
     }
 }

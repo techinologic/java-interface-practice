@@ -8,5 +8,8 @@ public class Main {
 
         System.out.println("Cars max speed is: " + car.getSpeed());
         System.out.println("Number of wheels: " + car.getWheels());
+
+        car.setCarStrength(10);
+        System.out.println("Strenght: " + car.getCarStrength());
     }
 }
